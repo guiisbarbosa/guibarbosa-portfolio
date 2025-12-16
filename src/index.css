@@ -1,0 +1,40 @@
+@import "tailwindcss";
+
+:root {
+  --c-950: #1c0126;
+  --c-900: #370546;
+  --c-800: #4f0966;
+  --c-700: #700f94;
+  --c-600: #921db7;
+  --c-400: #c464ec;
+
+  --highlight: #facc15;
+
+  --neutral: #6e6a77;
+  --neutral-dark: #302937;
+  --neutral-light: #d1d5db;
+}
+
+:root {
+  --bg-page: var(--c-950);
+
+  --text-primary: var(--c-900);
+  --text-secondary: var(--neutral);
+
+  --border-default: var(--neutral-light);
+
+  --brand-main: var(--c-700);
+  --brand-hover: var(--c-600);
+}
+
+.dark {
+  --bg-page: var(--c-950);
+
+  --text-primary: var(--neutral-light);
+  --text-secondary: var(--neutral);
+
+  --border-default: var(--c-800);
+
+  --brand-main: var(--c-600);
+  --brand-hover: var(--c-400);
+}
