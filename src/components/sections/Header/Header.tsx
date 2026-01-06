@@ -9,7 +9,7 @@ export const Header = ({ isScrolled }: HeaderProps) => {
     <header
       className={`flex w-full justify-between items-center px-8 py-4 transition-all duration-300 ${
         isScrolled
-          ? "fixed top-0 left-0 right-0 z-50 bg-(--bg-header)/80 backdrop-blur-md shadow-lg"
+          ? "fixed top-0 left-0 right-0 z-50 bg-(--bg-page)/80 backdrop-blur-md shadow-lg"
           : "bg-(--bg-header)"
       }`}
     >
