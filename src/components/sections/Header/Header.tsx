@@ -23,7 +23,7 @@ export const Header = () => {
             <a href="#">Contato</a>
           </li>
           <li className="hover:text-(--highlight) transition-colors text-2xl">
-              <FaRegMoon />
+            <FaRegMoon />
           </li>
         </ul>
       </nav>
