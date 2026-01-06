@@ -19,8 +19,6 @@ function App() {
         className={`min-h-screen bg-(--bg-page) ${isScrolled ? "pt-20" : ""}`}
       >
         <Header isScrolled={isScrolled} />
-        <div className="h-96 w-2 bg-amber-300"></div>
-        <div className="h-96 w-2 bg-amber-300"></div>
       </div>
     </>
   );
