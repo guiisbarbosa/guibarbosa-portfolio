@@ -17,7 +17,7 @@ export const Hero = () => {
   ];
 
   return (
-    <section className="w-screen flex-col lg:min-h-[calc(100vh-4.5rem)] flex justify-evenly items-center gap-4 md:gap-7 py-6 px-4 md:px-6 lg:flex-row">
+    <section className="w-full flex-col lg:min-h-screen flex justify-evenly items-center gap-4 md:gap-7 py-6 px-4 pt-18 md:px-6 lg:flex-row bg-linear-to-b from-(--c-950) to-(--c-700)">
       <div className="w-72 lg:w-96 aspect-square rounded-full border-4 border-(--c-400) overflow-hidden shadow-[0_0_70px_var(--c-800)]">
         <img src={profileImage} />
       </div>
@@ -59,7 +59,7 @@ export const Hero = () => {
           </Button>
         </div>
 
-        <div className="hidden lg:flex absolute md:right-12 bottom-6 md:bottom-1 animate-bounce">
+        <div className="hidden lg:flex absolute md:right-12 lg:right-auto bottom-6 md:bottom-1 animate-bounce [@media(max-height:600px)]:hidden">
           <div className="w-6 h-10 border-2 border-(--c-400) rounded-full flex justify-center p-2">
             <div className="w-1 h-2 bg-(--c-400) rounded-full animate-pulse" />
           </div>
