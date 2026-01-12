@@ -7,7 +7,7 @@ function App() {
 
   useEffect(() => {
     const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50);
+      setIsScrolled(window.scrollY > 5);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -16,9 +16,7 @@ function App() {
 
   return (
     <>
-      <div
-        className={`min-h-screen bg-(--bg-page) ${isScrolled ? "pt-20" : ""}`}
-      >
+      <div className="min-h-screen bg-(--bg-page)">
         <Header isScrolled={isScrolled} />
         <Hero />
       </div>
