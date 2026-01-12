@@ -1,5 +1,9 @@
 @import "tailwindcss";
 
+body {
+  color: #fff;
+}
+
 :root {
   --c-950: #1c0126;
   --c-900: #370546;
@@ -9,6 +13,7 @@
   --c-400: #c464ec;
 
   --highlight: #facc15;
+  --highlight-hover: #d4aa00;
 
   --neutral: #6e6a77;
   --neutral-dark: #302937;

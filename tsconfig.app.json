@@ -18,6 +18,9 @@
       "@components/*": [
         "components/*"
       ],
+      "@assets/*": [
+        "assets/*"
+      ],
     },
     /* Bundler mode */
     "moduleResolution": "bundler",
