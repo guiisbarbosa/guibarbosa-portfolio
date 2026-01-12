@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Header } from "@components/sections/Header/Header";
 import { Hero } from "@components/sections/Hero/Hero";
-import { About } from "@components/sections/About.tsx/About";
+import { About } from "@components/sections/About/About";
 
 function App() {
   const [isScrolled, setIsScrolled] = useState(false);
