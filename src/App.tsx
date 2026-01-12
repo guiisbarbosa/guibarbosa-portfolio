@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Header } from "@components/sections/Header/Header";
 import { Hero } from "@components/sections/Hero/Hero";
+import { About } from "@components/sections/About.tsx/About";
 
 function App() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -19,6 +20,7 @@ function App() {
       <div className="min-h-screen bg-(--bg-page)">
         <Header isScrolled={isScrolled} />
         <Hero />
+        <About />
       </div>
     </>
   );
