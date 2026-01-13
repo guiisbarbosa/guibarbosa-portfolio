@@ -1,7 +1,6 @@
 export function About() {
   const stats = [
-    { number: "8+", label: "Anos de experiência" },
-    { number: "30+", label: "Projetos concluídos" },
+    { number: "30+", label: "Projetos de estudo concluídos" },
     { number: "10+", label: "Tecnologias" },
     { number: "100%", label: "Dedicação" },
   ];
@@ -20,11 +19,12 @@ export function About() {
             <p>
               Sou uma pessoa movida pela{" "}
               <span className="text-(--c-400) font-semibold">curiosidade</span>{" "}
-              e pela busca constante por aprendizado. Meu primeiro contato com a
-              programação aconteceu aos{" "}
+              e pela busca constante por aprendizado. Conheci programação ainda
+              jovem, por volta dos{" "}
               <span className="text-(--c-400) font-semibold">15 anos</span>,
-              despertando em mim o interesse por entender como as coisas
-              funcionam e criar soluções que façam a diferença.
+              despertando em mim o interesse por entender como os softwares
+              funcionam. Recentemente, passei a estudá-la com foco e disciplina,
+              unindo tecnologia, design e resolução de problemas.
             </p>
 
             <p>
@@ -33,7 +33,9 @@ export function About() {
                 Designer Gráfico
               </span>
               , área que me ensinou a unir{" "}
-              <span className="text-(--highlight) font-semibold">criatividade</span>{" "}
+              <span className="text-(--highlight) font-semibold">
+                criatividade
+              </span>{" "}
               e atenção aos detalhes.
             </p>
 
@@ -55,7 +57,7 @@ export function About() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 mt-10">
+        <div className="grid   grid-cols-[repeat(auto-fit,minmax(200px,1fr))] sm:grid-cols-[repeat(auto-fit,minmax(220px,1fr))] lg:grid-cols-[repeat(auto-fit,minmax(240px,1fr))] gap-6 sm:gap-8 mt-10">
           {stats.map((stat, index) => (
             <div
               key={index}
