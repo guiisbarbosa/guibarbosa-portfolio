@@ -18,6 +18,14 @@ export const Hero = () => {
 
   return (
     <section className="w-full flex-col lg:min-h-screen flex justify-evenly items-center gap-4 md:gap-7 py-6 px-4 pt-18 md:px-6 lg:flex-row bg-linear-to-b from-(--c-950) to-(--c-700)">
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-20 left-10 w-72 h-72 bg-(--c-400)/20 rounded-full blur-3xl animate-[float_2s_ease-in-out_infinite]" />
+        <div
+          className="absolute bottom-20 right-10 w-96 h-96 bg-(--highlight)/20 rounded-full blur-3xl animate-[float_2s_ease-in-out_infinite]"
+          style={{ animationDelay: "1s" }}
+        />
+      </div>
+
       <div className="w-72 lg:w-96 aspect-square rounded-full border-4 border-(--c-400) overflow-hidden shadow-[0_0_70px_var(--c-800)]">
         <img src={profileImage} />
       </div>
