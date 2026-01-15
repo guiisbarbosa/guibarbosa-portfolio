@@ -1,3 +1,5 @@
+import { InfoCard } from "@components/ui/InfoCard/InfoCard";
+
 export function About() {
   const stats = [
     { number: "30+", label: "Projetos de estudo concluídos" },
@@ -6,7 +8,7 @@ export function About() {
   ];
 
   return (
-    <section className="min-h-screen bg-(--c-950) px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+    <section className="bg-(--c-950) px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-12 sm:mb-16">
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-2">
@@ -57,19 +59,9 @@ export function About() {
           </p>
         </div>
 
-        <div className="grid   grid-cols-[repeat(auto-fit,minmax(200px,1fr))] sm:grid-cols-[repeat(auto-fit,minmax(220px,1fr))] lg:grid-cols-[repeat(auto-fit,minmax(240px,1fr))] gap-6 sm:gap-8 mt-10">
+        <div className="grid grid-cols-[repeat(auto-fit,minmax(200px,1fr))] sm:grid-cols-[repeat(auto-fit,minmax(220px,1fr))] lg:grid-cols-[repeat(auto-fit,minmax(240px,1fr))] gap-6 sm:gap-8 mt-10">
           {stats.map((stat, index) => (
-            <div
-              key={index}
-              className="bg-linear-to-b from-(--c-800)/40 to--(--c-900)/20 border border-(--c-600)/30 rounded-xl p-6 sm:p-8 text-center hover:border-(--c-600)/70 transition-colors duration-300"
-            >
-              <div className="text-3xl sm:text-4xl font-bold text-(--c-400) mb-2">
-                {stat.number}
-              </div>
-              <div className="text-sm sm:text-base text-(--neutral-light)">
-                {stat.label}
-              </div>
-            </div>
+            <InfoCard key={index} main={stat.number} label={stat.label} />
           ))}
         </div>
       </div>
