@@ -39,7 +39,7 @@ export const Hero = () => {
                 <div className="w-2 md:w-3 h-2 md:h-3 rounded-full bg-yellow-500" />
                 <div className="w-2 md:w-3 h-2 md:h-3 rounded-full bg-green-500" />
               </div>
-              <span className="text-[10px] md:text-xs text-muted-foreground ml-2 text-[#7a6284]">
+              <span className="text-[10px] md:text-xs ml-2 text-[#7a6284]">
                 developer.ts
               </span>
             </div>
