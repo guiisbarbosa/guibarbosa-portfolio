@@ -58,11 +58,10 @@ export const Hero = () => {
             <a href="#projects">Ver projetos</a>
           </Button>
         </div>
-
-        <div className="hidden lg:flex absolute md:right-12 lg:right-auto bottom-6 md:bottom-1 animate-bounce [@media(max-height:600px)]:hidden">
-          <div className="w-6 h-10 border-2 border-(--c-400) rounded-full flex justify-center p-2">
-            <div className="w-1 h-2 bg-(--c-400) rounded-full animate-pulse" />
-          </div>
+      </div>
+      <div className="hidden lg:flex absolute md:right-12 lg:right-auto bottom-6 md:bottom-1 animate-bounce [@media(max-height:600px)]:hidden">
+        <div className="w-6 h-10 border-2 border-(--c-400) rounded-full flex justify-center p-2">
+          <div className="w-1 h-2 bg-(--c-400) rounded-full animate-pulse" />
         </div>
       </div>
     </section>
