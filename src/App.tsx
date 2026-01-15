@@ -3,6 +3,7 @@ import { Header } from "@components/sections/Header/Header";
 import { Hero } from "@components/sections/Hero/Hero";
 import { About } from "@components/sections/About/About";
 import { Skills } from "@components/sections/Skills/Skills";
+import { Projects } from "@components/sections/Projects/Projects";
 
 function App() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -25,6 +26,7 @@ function App() {
           <About />
           <Skills />
         </div>
+        <Projects />
       </div>
     </>
   );
