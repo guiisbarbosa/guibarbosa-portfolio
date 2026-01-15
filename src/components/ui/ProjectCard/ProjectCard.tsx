@@ -37,7 +37,7 @@ export const ProjectCard = ({
         </div>
 
         <div className="flex flex-col sm:flex-row gap-3">
-          <Button variant="primary" size="lg" asChild className="flex-1">
+          <Button variant="primary" size="md" asChild className="flex-1">
             <a href={repositoryUrl} target="_blank" rel="noopener noreferrer">
               Repositório
               <BiLogoGithub />
@@ -45,7 +45,7 @@ export const ProjectCard = ({
           </Button>
 
           {livePreviewUrl && (
-            <Button variant="secondary" size="lg" asChild className="flex-1">
+            <Button variant="secondary" size="md" asChild className="flex-1">
               <a
                 href={livePreviewUrl}
                 target="_blank"
