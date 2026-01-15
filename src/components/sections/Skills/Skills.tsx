@@ -1,26 +1,45 @@
 import { InfoCard } from "@components/ui/InfoCard/InfoCard";
+import {
+  BiSolidConversation,
+  BiSolidBrain,
+  BiSolidRocket,
+  BiSolidBookOpen,
+  BiSolidTimeFive,
+  BiLogoHtml5,
+  BiLogoCss3,
+  BiLogoTailwindCss,
+  BiLogoJavascript,
+  BiLogoTypescript,
+  BiLogoReact,
+  BiLogoNodejs,
+  BiLogoGit,
+  BiLogoGithub,
+  BiLogoPostgresql,
+} from "react-icons/bi";
+import { HiUserGroup } from "react-icons/hi";
 
 export function Skills() {
   const softSkills = [
-    { main: "C", label: "Comunicação clara" },
-    { main: "T", label: "Trabalho em equipe" },
-    { main: "P", label: "Pensamento crítico" },
-    { main: "P", label: "Produtividade" },
-    { main: "A", label: "Aprendizado contínuo" },
-    { main: "G", label: "Gestão de tempo" },
+    { main: <BiSolidConversation />, label: "Comunicação clara" },
+    { main: <HiUserGroup />, label: "Trabalho em equipe" },
+    { main: <BiSolidBrain />, label: "Pensamento crítico" },
+    { main: <BiSolidRocket />, label: "Proatividade" },
+    { main: <BiSolidBookOpen />, label: "Aprendizado contínuo" },
+    { main: <BiSolidTimeFive />, label: "Gestão de tempo" },
   ];
 
   const hardSkills = [
-    { main: "H", label: "HTML5" },
-    { main: "C", label: "CSS3" },
-    { main: "J", label: "JavaScript" },
-    { main: "T", label: "TypeScript" },
-    { main: "R", label: "React" },
-    { main: "R", label: "React Native" },
-    { main: "N", label: "Node.js" },
-    { main: "G", label: "Git" },
-    { main: "G", label: "GitHub" },
-    { main: "P", label: "PostgreSQL" },
+    { main: <BiLogoHtml5 />, label: "HTML5" },
+    { main: <BiLogoCss3 />, label: "CSS3" },
+    { main: <BiLogoTailwindCss />, label: "Tailwind CSS" },
+    { main: <BiLogoJavascript />, label: "JavaScript" },
+    { main: <BiLogoTypescript />, label: "TypeScript" },
+    { main: <BiLogoReact />, label: "React" },
+    { main: <BiLogoReact />, label: "React Native" },
+    { main: <BiLogoNodejs />, label: "Node.js" },
+    { main: <BiLogoGit />, label: "Git" },
+    { main: <BiLogoGithub />, label: "GitHub" },
+    { main: <BiLogoPostgresql />, label: "PostgreSQL" },
   ];
 
   return (
