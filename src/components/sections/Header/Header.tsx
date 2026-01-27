@@ -1,4 +1,4 @@
-import { FaRegMoon } from "react-icons/fa6";
+import { MobileMenu } from "../../ui/MobileMenu/MobileMenu";
 
 interface HeaderProps {
   isScrolled: boolean;
@@ -7,7 +7,7 @@ interface HeaderProps {
 export const Header = ({ isScrolled }: HeaderProps) => {
   return (
     <header
-      className={`flex w-full justify-between items-center px-8 py-4 transition-all duration-300 h-18 ${
+      className={`fixed flex w-full justify-between items-center px-8 py-4 transition-all duration-300 h-18 z-1 ${
         isScrolled
           ? "fixed top-0 left-0 right-0 z-50 bg-(--bg-page)/80 backdrop-blur-md shadow-lg"
           : "bg-(--bg-hpage)"
@@ -15,40 +15,37 @@ export const Header = ({ isScrolled }: HeaderProps) => {
     >
       <h1 className="text-3xl font-bold text-(--highlight)">GB</h1>
 
-      <nav className="">
+      <nav className="hidden md:block">
         <ul className="text-white flex gap-4 items-center">
           <li>
-            <a href="#" className="menu-link">
+            <a href="#home" className="menu-link">
               Início
             </a>
           </li>
           <li>
-            <a href="#" className="menu-link">
+            <a href="#about" className="menu-link">
               Sobre
             </a>
           </li>
           <li>
-            <a href="#" className="menu-link">
+            <a href="#skills" className="menu-link">
               Habilidades
             </a>
           </li>
           <li>
-            <a href="#" className="menu-link">
+            <a href="#projects" className="menu-link">
               Projetos
             </a>
           </li>
           <li>
-            <a href="#" className="menu-link">
+            <a href="#contact" className="menu-link">
               Contato
             </a>
           </li>
-          <li
-            className={`hover:text-(--highlight) transition-colors text-2xl cursor-pointer`}
-          >
-            <FaRegMoon />
-          </li>
         </ul>
       </nav>
+
+      <MobileMenu />
     </header>
   );
 };

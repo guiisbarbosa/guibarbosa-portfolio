@@ -2,7 +2,7 @@ import { Button } from "@components/ui/Button/Button";
 
 import profileImage from "@assets/profile-mockup.jpg";
 
-import { FaWhatsapp } from "react-icons/fa";
+import { FaRegFileLines } from "react-icons/fa6";
 
 export const Hero = () => {
   const codeLines = [
@@ -17,15 +17,10 @@ export const Hero = () => {
   ];
 
   return (
-    <section className="w-full flex-col lg:min-h-screen flex justify-evenly items-center gap-4 md:gap-7 py-6 px-4 pt-18 md:px-6 lg:flex-row bg-linear-to-b from-(--c-950) to-(--c-700)">
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-20 left-10 w-72 h-72 bg-(--c-400)/20 rounded-full blur-3xl animate-[float_2s_ease-in-out_infinite]" />
-        <div
-          className="absolute bottom-20 right-10 w-96 h-96 bg-(--highlight)/20 rounded-full blur-3xl animate-[float_2s_ease-in-out_infinite]"
-          style={{ animationDelay: "1s" }}
-        />
-      </div>
-
+    <section
+      className="relative isolate z-0 w-full flex-col lg:min-h-screen flex justify-evenly items-center gap-4 md:gap-7 py-6 px-4 pt-18 md:px-6 lg:flex-row bg-linear-to-b from-(--c-950) to-(--c-700)"
+      id="home"
+    >
       <div className="w-72 lg:w-96 aspect-square rounded-full border-4 border-(--c-400) overflow-hidden shadow-[0_0_70px_var(--c-800)]">
         <img src={profileImage} />
       </div>
@@ -59,7 +54,7 @@ export const Hero = () => {
         <div className="flex mt-6 w-full gap-4">
           <Button variant="primary" asChild>
             <a href="http://wa.me/5535991071126">
-              Entrar em contato <FaWhatsapp size={20} />
+              Currículo <FaRegFileLines size={20} />
             </a>
           </Button>
           <Button variant="outline" asChild>
@@ -67,10 +62,19 @@ export const Hero = () => {
           </Button>
         </div>
       </div>
+
       <div className="hidden lg:flex absolute md:right-12 lg:right-auto bottom-6 md:bottom-1 animate-bounce [@media(max-height:600px)]:hidden">
         <div className="w-6 h-10 border-2 border-(--c-400) rounded-full flex justify-center p-2">
           <div className="w-1 h-2 bg-(--c-400) rounded-full animate-pulse" />
         </div>
+      </div>
+
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-20 left-10 w-72 h-72 bg-(--c-400)/20 rounded-full blur-3xl animate-[float_2s_ease-in-out_infinite]" />
+        <div
+          className="absolute bottom-20 right-10 w-96 h-96 bg-(--highlight)/10 rounded-full blur-3xl animate-[float_2s_ease-in-out_infinite]"
+          style={{ animationDelay: "1s" }}
+        />
       </div>
     </section>
   );

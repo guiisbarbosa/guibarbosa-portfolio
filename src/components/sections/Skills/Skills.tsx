@@ -43,7 +43,7 @@ export function Skills() {
   ];
 
   return (
-    <section className="px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+    <section className="px-4 sm:px-6 lg:px-8 py-16 sm:py-24" id="skills">
       <div className="max-w-6xl mx-auto">
 
         <div className="mb-16 sm:mb-20">
@@ -76,7 +76,7 @@ export function Skills() {
             {hardSkills.map((skill, index) => (
               <div
                 key={index}
-                className="min-w-50 sm:min-w-55 lg:min-w-60 flex justify-center grow md:grow-0"
+                className="min-w-40 sm:min-w-55 lg:min-w-60 flex justify-center md:grow-0"
               >
                 <InfoCard main={skill.main} label={skill.label} />
               </div>

@@ -12,7 +12,7 @@ import { ProjectCard } from "@/components/ui/ProjectCard/ProjectCard";
 export const Projects = () => {
 
   return (
-    <section className="w-full bg-(--c-950) px-4 sm:px-6 lg:px-8 py-16 sm:py-24">
+    <section className="w-full bg-(--c-950) px-4 sm:px-6 lg:px-8 py-16 sm:py-24" id="projects">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12 sm:mb-16">
           <h2 className="text-(--highlight) text-4xl sm:text-5xl md:text-6xl font-bold mb-2">
