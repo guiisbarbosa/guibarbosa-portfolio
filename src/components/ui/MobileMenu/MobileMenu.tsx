@@ -15,7 +15,6 @@ export const MobileMenu = () => {
 
   return (
     <>
-      {/* Ícone Hamburguer */}
       <button
         className="md:hidden text-(--highlight) text-2xl"
         onClick={handleMenuClick}
@@ -24,13 +23,11 @@ export const MobileMenu = () => {
         <RiMenuFold4Line />
       </button>
 
-      {/* Drawer */}
       <div
-        className={`fixed top-0 left-0 h-screen w-full bg-(--bg-page) shadow-lg transform transition-transform duration-300 z-50 md:hidden flex flex-col ${
+        className={`fixed top-0 left-0 h-screen w-full bg-(--c-950) shadow-lg transform transition-transform duration-300 z-50 md:hidden flex flex-col ${
           isOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
-        {/* Header do Drawer */}
         <div className="flex justify-between items-center px-6 py-4">
           <h2 className="text-2xl font-bold text-(--highlight)">GB</h2>
           <button
@@ -42,7 +39,6 @@ export const MobileMenu = () => {
           </button>
         </div>
 
-        {/* Menu Items */}
         <nav className="flex-1 px-6 py-8">
           <ul className="text-white flex flex-col gap-6">
             <li>
