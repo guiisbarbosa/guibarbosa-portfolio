@@ -16,13 +16,17 @@ export const Contact = () => {
   const solcialLinks = [
     {
       name: "LinkedIn",
-      url: "https://linkedin.com/in/guibarbosa",
+      url: "https://www.linkedin.com/in/guiisbarbosa/",
       icon: FiLinkedin,
     },
-    { name: "GitHub", url: "https://github.com/guibarbosa", icon: FiGithub },
+    {
+      name: "GitHub",
+      url: "https://www.linkedin.com/in/guiisbarbosa/",
+      icon: FiGithub,
+    },
     {
       name: "Instagram",
-      url: "https://instagram.com/guibarbosa",
+      url: "https://www.instagram.com/guisbarbosa_",
       icon: FiInstagram,
     },
   ];
@@ -44,8 +48,8 @@ export const Contact = () => {
         </div>
 
         <div className="flex flex-col text-(--neutral-light) items-center">
-          <div className="min-w-100 md:min-w-140 bg-(--c-900)/50 backdrop-blur-xs border border-[#3d1e49] rounded-lg p-6 md:p-8 text-left shadow-[0_0_70px_var(--c-800)]">
-            <h3 className="text-2xl font-bold mb-6">Envie uma mensagem</h3>
+          <div className="min-w-90 md:min-w-140 bg-(--c-900)/50 backdrop-blur-xs border border-[#3d1e49] rounded-lg p-6 md:p-8 text-left shadow-[0_0_70px_var(--c-800)]">
+            <h3 className="text-xl font-bold mb-6 text-center">Utilize o formulário abaixo para me enviar uma mensagem pelo Whatsapp</h3>
 
             <form
               className="space-y-4 w-full"
@@ -58,7 +62,7 @@ export const Contact = () => {
                   placeholder="Seu nome"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
-                  className="bg-black/20 border border-(--c-800) rounded-lg px-4 py-3 placeholder-(--c-600) focus:outline-none focus:border-(--highlight) transition-colors"
+                  className="bg-black/20 border border-(--c-800) rounded-lg px-4 py-3 placeholder-(--c-700) focus:outline-none focus:border-(--highlight) transition-colors"
                 />
               </div>
 
@@ -69,7 +73,7 @@ export const Contact = () => {
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
                   rows={5}
-                  className="bg-black/20 border border-(--c-800) rounded-lg px-4 py-3 placeholder-(--c-600) focus:outline-none focus:border-(--highlight) transition-colors resize-none"
+                  className="bg-black/20 border border-(--c-800) rounded-lg px-4 py-3 placeholder-(--c-700) focus:outline-none focus:border-(--highlight) transition-colors resize-none"
                 />
               </div>
 
