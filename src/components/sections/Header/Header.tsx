@@ -7,7 +7,7 @@ interface HeaderProps {
 export const Header = ({ isScrolled }: HeaderProps) => {
   return (
     <header
-      className={`fixed flex w-full justify-between items-center px-8 py-4 transition-all duration-300 h-18 z-1 ${
+      className={`fixed flex w-full justify-between items-center px-8 py-4 transition-all duration-300 h-18 z-1 bg-(--bg-page)${
         isScrolled
           ? "fixed top-0 left-0 right-0 z-50 bg-(--bg-page)/80 backdrop-blur-md shadow-lg"
           : "bg-(--bg-hpage)"
