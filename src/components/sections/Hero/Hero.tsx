@@ -1,6 +1,6 @@
 import { Button } from "@components/ui/Button/Button";
 
-import profileImage from "@assets/profile-mockup.jpg";
+import profileImage from "@assets/profile.jpg";
 
 import { FaRegFileLines } from "react-icons/fa6";
 
@@ -21,7 +21,7 @@ export const Hero = () => {
       className="relative isolate z-0 w-full flex-col lg:min-h-screen flex justify-evenly items-center gap-4 md:gap-7 py-6 px-4 pt-18 md:px-6 lg:flex-row bg-linear-to-b from-(--c-950) to-(--c-700)"
       id="home"
     >
-      <div className="w-72 lg:w-96 aspect-square rounded-full border-4 border-(--c-400) overflow-hidden shadow-[0_0_70px_var(--c-800)]">
+      <div className="w-72 lg:w-96 aspect-square rounded-full border-4 border-(--c-400) overflow-hidden shadow-[0_0_70px_var(--c-800)] z-1">
         <img src={profileImage} />
       </div>
 
@@ -69,7 +69,7 @@ export const Hero = () => {
         </div>
       </div>
 
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+      <div className="absolute inset-0 overflow-hidden pointer-events-none z-0">
         <div className="absolute top-20 left-10 w-72 h-72 bg-(--c-400)/20 rounded-full blur-3xl animate-[float_2s_ease-in-out_infinite]" />
         <div
           className="absolute bottom-20 right-10 w-96 h-96 bg-(--highlight)/10 rounded-full blur-3xl animate-[float_2s_ease-in-out_infinite]"
