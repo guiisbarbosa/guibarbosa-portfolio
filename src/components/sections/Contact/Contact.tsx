@@ -49,7 +49,10 @@ export const Contact = () => {
 
         <div className="flex flex-col text-(--neutral-light) items-center">
           <div className="min-w-90 md:min-w-140 bg-(--c-900)/50 backdrop-blur-xs border border-[#3d1e49] rounded-lg p-6 md:p-8 text-left shadow-[0_0_70px_var(--c-800)]">
-            <h3 className="text-xl font-bold mb-6 text-center">Utilize o formulário abaixo para me enviar uma mensagem pelo Whatsapp</h3>
+            <h3 className="text-xl font-bold mb-6 text-center">
+              Utilize o formulário abaixo para me enviar uma mensagem pelo
+              Whatsapp
+            </h3>
 
             <form
               className="space-y-4 w-full"
@@ -97,19 +100,17 @@ export const Contact = () => {
 
             <div className="flex gap-8">
               {solcialLinks.map((link) => (
-                <div
+                <a
+                  href={link.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={link.name}
                   key={link.name}
-                  className="bg-(--c-800) w-10 h-10 rounded-full flex items-center justify-center text-xl cursor-pointer text-(--neutral-light) hover:bg-(--c-950) hover:text-(--highlight)"
                 >
-                  <a
-                    href={link.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label={link.name}
-                  >
+                  <div className="bg-(--c-800) w-10 h-10 rounded-full flex items-center justify-center text-xl cursor-pointer text-(--neutral-light) hover:bg-(--c-950) hover:text-(--highlight)">
                     <link.icon />
-                  </a>
-                </div>
+                  </div>
+                </a>
               ))}
             </div>
           </div>
