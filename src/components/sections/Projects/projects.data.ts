@@ -1,57 +1,58 @@
+import pokemon from "@assets/pokemon.png";
+import expertNotes from "@assets/expert-notes.png";
+import cardapioOnline from "@assets/cardapio-online.png";
+import batPass from "@assets/bat-pass.jpg"
+import portfolioMobile from "@assets/portfolio-mobile.jpg"
+import apiPodcast from "@assets/api-podcast.png"
+
 export const projects = [
   {
-    title: "Project 1",
-    description: "Description for project 1",
-    image:
-      "https://stage.optimumpet.com.br/media/uploads/2023/05/anos-vive-gato-01-1024x683.webp",
-    technologies: ["Tech1", "Tech2"],
-    repositoryUrl: "#",
-    livePreviewUrl: "#",
+    title: "Pokémon List",
+    description:
+      "Projeto desenvolvido em ReactJS consumindo a PokéAPI, como forma de aprendizado de teste técnico para o Curso Dev Quest.",
+    image: pokemon,
+    technologies: ["ReactJS", "JavaScript"],
+    repositoryUrl: "https://github.com/guiisbarbosa/pokemon-list",
+    livePreviewUrl: "https://pokemon-list-gold-two.vercel.app",
   },
   {
-    title: "Project 2",
-    description: "Description for project 2",
-    image:
-      "https://stage.optimumpet.com.br/media/uploads/2023/05/anos-vive-gato-01-1024x683.webp",
-    technologies: ["Tech1", "Tech2"],
-    repositoryUrl: "#",
-    livePreviewUrl: "",
+    title: "Expert Notes",
+    description:
+      "Aplicação criada durante o NLW promovido pela Rocketseat, onde é possível criar notas através da digitação de textos e também captação de voz.",
+    image: expertNotes,
+    technologies: ["ReactJS", "TypeScript"],
+    repositoryUrl: "https://github.com/guiisbarbosa/nlw-expert-notes",
+    livePreviewUrl: "https://nlw-expert-notes-three-nu.vercel.app",
   },
   {
-    title: "Project 3",
-    description: "Description for project 3",
-    image:
-      "https://stage.optimumpet.com.br/media/uploads/2023/05/anos-vive-gato-01-1024x683.webp",
-    technologies: ["Tech1", "Tech2"],
-    repositoryUrl: "#",
-    livePreviewUrl: "",
+    title: "Cardápio online",
+    description:
+      "Cardápio desenvolvido para uma lanchonete fictícias, contando com a possibilidade de adicionar e remover intens no carrinho e finalizar o pedido através do Whtasapp.",
+    image: cardapioOnline,
+    technologies: ["HTML", "CSS", "JavaScript"],
+    repositoryUrl: "https://github.com/guiisbarbosa/cardapio-online",
+    livePreviewUrl: "https://guiisbarbosa.github.io/cardapio-online/",
   },
   {
-    title: "Project 4",
-    description: "Description for project 4",
-    image:
-      "https://stage.optimumpet.com.br/media/uploads/2023/05/anos-vive-gato-01-1024x683.webp",
-    technologies: ["Tech1", "Tech2"],
-    repositoryUrl: "#",
-    livePreviewUrl: "#",
+    title: "BatPass Generator",
+    description: "Um gerador de senhas com temática do Batman, desenvolvido durante um bootcamp de React Native da DIO.",
+    image: batPass,
+    technologies: ["React Native", "TypeScript"],
+    repositoryUrl: "https://github.com/guiisbarbosa/bat-pass-generator",
   },
   {
-    title: "Project 5",
-    description: "Description for project 5",
+    title: "Portfólio Mobile",
+    description: "Aplicação mobile, como um portfólio, desenvolvida em React Native, para praticar meus conhecimentos na tecnologia.",
     image:
-      "https://stage.optimumpet.com.br/media/uploads/2023/05/anos-vive-gato-01-1024x683.webp",
-    technologies: ["Tech1", "Tech2"],
-    repositoryUrl: "#",
-    livePreviewUrl: "#",
+      portfolioMobile,
+    technologies: ["React Native", "TypeScript"],
+    repositoryUrl: "https://github.com/guiisbarbosa/portfolio-mobile",
   },
   {
-    title: "Project 6",
-    description: "Description for project 6",
-    image:
-      "https://stage.optimumpet.com.br/media/uploads/2023/05/anos-vive-gato-01-1024x683.webp",
-    technologies: ["Tech1", "Tech2"],
-    repositoryUrl: "#",
-    livePreviewUrl: "#",
-  },
-  
+    title: "API Podcast Manager",
+    description: "API desenvolvida em Node.js sem utilização de frameworks para fins de aprendizado, criada durante Bootcamp da DIO.",
+    image: apiPodcast,
+    technologies: ["Node.js", "JavaScript"],
+    repositoryUrl: "https://github.com/guiisbarbosa/podcast-manager-node-ts-api-without-framework"
+  }
 ];

@@ -21,7 +21,7 @@ export const ProjectCard = ({
           {title}
         </h3>
 
-        <p className="text-(--neutral-light) text-base sm:text-lg leading-relaxed mb-6">
+        <p className="text-(--neutral-light) text-sm leading-relaxed mb-6">
           {description}
         </p>
 
