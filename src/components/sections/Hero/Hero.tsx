@@ -7,7 +7,7 @@ import { FaRegFileLines } from "react-icons/fa6";
 export const Hero = () => {
   const codeLines = [
     "> const developer = {",
-    '    name: "Guilherme Barbosa",',
+    '    name: "Guilherme S. Barbosa",',
     '    role: "Desenvolvedor Web e Mobile FullStack",',
     '    passion: "Tecnologia",',
     '    interests: ["games", "filmes", "séries",',
