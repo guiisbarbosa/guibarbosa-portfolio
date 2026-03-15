@@ -11,7 +11,7 @@ export const projects = [
     description:
       "Projeto desenvolvido em ReactJS consumindo a PokéAPI, como forma de aprendizado de teste técnico para o Curso Dev Quest.",
     image: pokemon,
-    technologies: ["ReactJS", "JavaScript"],
+    technologies: ["ReactJS", "JavaScript", "Styled Components"],
     repositoryUrl: "https://github.com/guiisbarbosa/pokemon-list",
     livePreviewUrl: "https://pokemon-list-gold-two.vercel.app",
   },
@@ -20,7 +20,7 @@ export const projects = [
     description:
       "Aplicação criada durante o NLW promovido pela Rocketseat, onde é possível criar notas através da digitação de textos e também captação de voz.",
     image: expertNotes,
-    technologies: ["ReactJS", "TypeScript"],
+    technologies: ["ReactJS", "TypeScript", "Tailwind CSS"],
     repositoryUrl: "https://github.com/guiisbarbosa/nlw-expert-notes",
     livePreviewUrl: "https://nlw-expert-notes-three-nu.vercel.app",
   },
@@ -52,7 +52,7 @@ export const projects = [
     title: "API Podcast Manager",
     description: "API desenvolvida em Node.js sem utilização de frameworks para fins de aprendizado, criada durante Bootcamp da DIO.",
     image: apiPodcast,
-    technologies: ["Node.js", "JavaScript"],
+    technologies: ["Node.js", "TypeScript"],
     repositoryUrl: "https://github.com/guiisbarbosa/podcast-manager-node-ts-api-without-framework"
   }
 ];

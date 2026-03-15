@@ -16,11 +16,6 @@ export const Hero = () => {
     "  };",
   ];
 
-  const handleCurriculoClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
-    e.preventDefault();
-    alert("Em breve será colocado");
-  };
-
   return (
     <section
       className="relative isolate z-0 w-full flex-col lg:min-h-screen flex justify-evenly items-center gap-4 md:gap-7 py-6 px-4 pt-18 md:px-6 lg:flex-row bg-linear-to-b from-(--c-950) to-(--c-700)"
@@ -58,7 +53,9 @@ export const Hero = () => {
 
         <div className="flex mt-6 w-full gap-4">
           <Button variant="primary" asChild>
-            <a href="#" onClick={handleCurriculoClick}>
+            <a
+              href="https://drive.google.com/file/d/1auNzZb9n8yR1yvreoAMy9BiR8nmfwvvU/view?usp=sharing"
+            >
               Currículo <FaRegFileLines size={20} />
             </a>
           </Button>
