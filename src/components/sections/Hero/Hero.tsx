@@ -54,7 +54,7 @@ export const Hero = () => {
         <div className="flex mt-6 w-full gap-4">
           <Button variant="primary" asChild>
             <a
-              href="https://drive.google.com/file/d/1auNzZb9n8yR1yvreoAMy9BiR8nmfwvvU/view?usp=sharing"
+              href="https://drive.google.com/file/d/1auNzZb9n8yR1yvreoAMy9BiR8nmfwvvU/view?usp=sharing" target="_blank"
             >
               Currículo <FaRegFileLines size={20} />
             </a>
